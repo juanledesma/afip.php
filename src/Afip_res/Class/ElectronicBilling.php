@@ -98,6 +98,7 @@ class ElectronicBilling extends AfipWebService {
 			return array(
 				'CAE' 		=> $results->FeDetResp->FECAEDetResponse->CAE,
 				'CAEFchVto' => $this->FormatDate($results->FeDetResp->FECAEDetResponse->CAEFchVto),
+                'Observaciones'       =>  $results->FeDetResp->FECAEDetResponse->Observaciones,
 			);
 		}
 	}
